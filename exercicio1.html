@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="grids.css" />
+    <style>
+      * {
+        text-align: center;
+      }
+
+      .row > [class*="col-"] {
+        border: 1px solid #020202;
+      }
+
+      .topo {
+        height: 80px;
+        margin-bottom: 5px;
+
+      }
+
+      .menu {
+        height: 30px;
+        margin-bottom: 5px;
+      }
+
+      .coluna-A {
+        height: 400px;
+      }
+      
+      .coluna-B {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mb-1">
+        <div class="col-12 topo"><a href="index.html">Voltar</a> Topo (altura 80px)</div>
+      </div>
+
+      <div class="row mb-1">
+        <div class="col-12 menu">Menu (altura 30px)</div>
+      </div>
+
+      <div class="row mb-1 gap-1">
+        <div class="col-6 coluna-A">Coluna A (altura 400px)</div>
+        <div class="col-6 coluna-B">Coluna B (altura 400px)</div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">Rodapé</div>
+      </div>
+    </div>
+  </body>
+</html>

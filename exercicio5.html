@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="grids.css" />
+    <style>
+      * {
+        text-align: center;
+      }
+
+      /*.row > [class*="col-"] {
+        border: 1px solid #020202;
+      }*/
+
+      .topo {
+        height: 80px;
+        margin-bottom: 5px;
+        /* border: 1px solid black; */
+        border-bottom: 2px dashed red;
+      }
+
+      .menu {
+        height: 30px;
+        margin-bottom: 5px;
+        border: 1px solid black;
+      }
+
+      .coluna-A {
+        height: 320px;
+        border: 1px solid black;
+      }
+      
+      .coluna-B {
+        /*border: 1px solid black;*/
+      }
+
+      .coluna-c{
+        background-color: blue;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+
+      .coluna-d{
+        background-color: blueviolet;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+
+      .resumo-noticias div{
+        border: 1px solid red;
+        height: 100px;
+      }
+
+      .rodape{
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mb-1">
+        <div class="col-12 topo"><a href="index.html">Voltar</a> Topo (altura 80px)</div>
+      </div>
+
+      <div class="row mb-1">
+        <div class="col-12 menu">Menu (altura 30px)</div>
+      </div>
+
+      <div class="row mb-1 gap-1">
+        <div class="col-6 coluna-A">Coluna A (altura 400px)</div>
+        <div class="col-6 coluna-B">
+           <div class="row">
+            <div class="col-12 coluna-c"> Coluna C</div>
+           </div> 
+           <div class="row">
+            <div class="col-12 coluna-d"> Coluna D</div>
+           </div>
+           <div class="row gap-1 resumo-noticias">
+            <div class="col-4">Imagem</div>
+            <div class="col-8">Texto</div>
+           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 rodape">Rodapé</div>
+      </div>
+    </div>
+  </body>
+</html>
